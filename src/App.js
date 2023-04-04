@@ -1,6 +1,14 @@
 import { useEffect, useState } from "react";
 import { useGetUsersQuery } from "./services/users";
-
+import
+{
+  faEnvelopeOpen,
+  FaUser,
+  FaCalenderTimes,
+  FaMap,
+  FaPhone,
+  FaLock
+} from 'react-icons/fa'
 
 function App()
 {
