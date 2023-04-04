@@ -24,6 +24,11 @@ function App()
     {
       const randomPerson = data.result
       const { phone, email } = randomPerson
+      const { large: image } = randomPerson.picture
+      const { password } = randomPerson.login
+      const { first, last } = randomPerson.name
+      const { dob: { age } } = randomPerson
+      const { street: { number, name } } = randomPerson.location
     }
   }, [data])
 
