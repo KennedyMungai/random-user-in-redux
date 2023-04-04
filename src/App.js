@@ -39,6 +39,8 @@ function App()
         street: `${number}, ${name}`,
         name: `${first} ${last}`
       }
+
+      setPerson(newPerson)
     }
   }, [data])
 
