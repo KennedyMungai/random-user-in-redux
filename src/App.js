@@ -20,8 +20,11 @@ function App()
 
   useEffect(() =>
   {
-
-  }, [])
+    if (data)
+    {
+      const randomPerson = data.result
+    }
+  }, [data])
 
 
   return (
