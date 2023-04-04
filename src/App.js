@@ -22,7 +22,7 @@ function App()
   {
     if (data)
     {
-      const randomPerson = data.result
+      const randomPerson = data.result[0]
     }
   }, [data])
 
