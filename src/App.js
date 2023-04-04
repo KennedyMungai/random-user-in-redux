@@ -23,6 +23,7 @@ function App()
     if (data)
     {
       const randomPerson = data.result
+      const { phone, email } = randomPerson
     }
   }, [data])
 
