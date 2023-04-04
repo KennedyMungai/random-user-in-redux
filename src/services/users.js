@@ -1,20 +1,15 @@
-import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
+import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
-
-export const usersApi = () => createApi({
+export const usersApi = createApi({
     reducerPath: "users",
     baseQuery: fetchBaseQuery({
-        baseUrl: "https://randomuser.me"
+        baseUrl: "https://randomuser.me",
     }),
-    endpoints: (builder) => (
-        {
-            getUsers: builder.query(
-                {
-                    query: () => "api"
-                }
-            )
-        }
-    )
-})
+    endpoints: (builder) => ({
+        getUsers: builder.query({
+            query: () => "api",
+        }),
+    }),
+});
 
-export const { useGetUsersQuery } = usersApi
+export const { useGetUsersQuery } = usersApi;
