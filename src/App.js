@@ -18,9 +18,14 @@ function App()
 
   const { data, isLoading, refetch } = useGetUsersQuery()
 
-  const handleValue = () =>
+  const handleValue = (e) =>
   {
-
+    if (e.target.classList.contains("icon"))
+    {
+      const newValue = e.target.dataset.label
+      setTitle(newValue)
+      setValue(person[newValue])
+    }
   }
 
   useEffect(() =>
@@ -71,42 +76,42 @@ function App()
           <div className="values-list">
             <button
               className="icon"
-              data-labels="name"
+              data-label="name"
               onMouseOver={handleValue}
             >
               <FaUser />
             </button>
             <button
               className="icon"
-              data-labels="age"
+              data-label="age"
               onMouseOver={handleValue}
             >
               <FaEnvelopeOpen />
             </button>
             <button
               className="icon"
-              data-labels="email"
+              data-label="email"
               onMouseOver={handleValue}
             >
               <FaCalendarTimes />
             </button>
             <button
               className="icon"
-              data-labels="street"
+              data-label="street"
               onMouseOver={handleValue}
             >
               <FaMap />
             </button>
             <button
               className="icon"
-              data-labels="phone"
+              data-label="phone"
               onMouseOver={handleValue}
             >
               <FaPhone />
             </button>
             <button
               className="icon"
-              data-labels="password"
+              data-label="password"
               onMouseOver={handleValue}
             >
               <FaLock />
