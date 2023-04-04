@@ -48,9 +48,34 @@ function App()
 
 
   return (
-    <div className="App">
-      <h2>Random User</h2>
-    </div>
+    <main>
+      <div className="block bcg-block">
+        <div className="block">
+          <div className="container">
+            <img
+              src={person && person.image}
+              alt="random user"
+              className="user-img"
+            />
+            <p className="user-title">
+              My {title}
+            </p>
+            <p className="user-value">
+              {value}
+            </p>
+            <div className="values-list">
+              <button
+                className="icon"
+                data-labels="name"
+                onMouseOver={handleValue}
+              >
+
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
   );
 }
 
