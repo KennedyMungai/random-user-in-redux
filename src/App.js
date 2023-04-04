@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useGetUsersQuery } from "./services/users";
 import
 {
-  faEnvelopeOpen,
+  FaEnvelopeOpen,
   FaUser,
   FaCalenderTimes,
   FaMap,
@@ -78,31 +78,38 @@ function App()
               </button>
               <button
                 className="icon"
-                data-labels="name"
+                data-labels="age"
                 onMouseOver={handleValue}
               >
-                <FaUser />
+                <FaEnvelopeOpen />
               </button>
               <button
                 className="icon"
-                data-labels="name"
+                data-labels="email"
                 onMouseOver={handleValue}
               >
-                <FaUser />
+                <FaCalenderTimes />
               </button>
               <button
                 className="icon"
-                data-labels="name"
+                data-labels="street"
                 onMouseOver={handleValue}
               >
-                <FaUser />
+                <FaMap />
               </button>
               <button
                 className="icon"
-                data-labels="name"
+                data-labels="phone"
                 onMouseOver={handleValue}
               >
-                <FaUser />
+                <FaPhone />
+              </button>
+              <button
+                className="icon"
+                data-labels="password"
+                onMouseOver={handleValue}
+              >
+                <FaLock />
               </button>
             </div>
           </div>
