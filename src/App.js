@@ -74,7 +74,7 @@ function App()
                 data-labels="name"
                 onMouseOver={handleValue}
               >
-
+                <FaUser />
               </button>
             </div>
           </div>
