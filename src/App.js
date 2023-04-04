@@ -14,6 +14,7 @@ function App()
 {
   const [person, setPerson] = useState(null)
   const [value, setValue] = useState("Random Person")
+  const [title, setTitle] = useState("name")
 
   return (
     <div className="App">
