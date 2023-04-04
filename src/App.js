@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { useGetUsersQuery } from "./services/users";
 
 
 function App()
