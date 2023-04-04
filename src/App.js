@@ -117,7 +117,10 @@ function App()
               <FaLock />
             </button>
           </div>
-          <button className="btn">
+          <button
+            className="btn"
+            onClick={() => refetch()}
+          >
             {isLoading ? 'Loading...' : 'Random User'}
           </button>
         </div>
