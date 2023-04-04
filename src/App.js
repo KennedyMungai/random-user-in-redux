@@ -54,68 +54,67 @@ function App()
 
   return (
     <main>
-      <div className="block bcg-black">
-        <div className="block">
-          <div className="container">
-            <img
-              src={person && person.image}
-              alt="random user"
-              className="user-img"
-            />
-            <p className="user-title">
-              My {title}
-            </p>
-            <p className="user-value">
-              {value}
-            </p>
-            <div className="values-list">
-              <button
-                className="icon"
-                data-labels="name"
-                onMouseOver={handleValue}
-              >
-                <FaUser />
-              </button>
-              <button
-                className="icon"
-                data-labels="age"
-                onMouseOver={handleValue}
-              >
-                <FaEnvelopeOpen />
-              </button>
-              <button
-                className="icon"
-                data-labels="email"
-                onMouseOver={handleValue}
-              >
-                <FaCalendarTimes />
-              </button>
-              <button
-                className="icon"
-                data-labels="street"
-                onMouseOver={handleValue}
-              >
-                <FaMap />
-              </button>
-              <button
-                className="icon"
-                data-labels="phone"
-                onMouseOver={handleValue}
-              >
-                <FaPhone />
-              </button>
-              <button
-                className="icon"
-                data-labels="password"
-                onMouseOver={handleValue}
-              >
-                <FaLock />
-              </button>
-            </div>
-            <button className="btn">
-              {isLoading ? 'Loading...' : 'Random User'}
+      <div className="block bcg-black"></div>
+      <div className="block">
+        <div className="container">
+          <img
+            src={person && person.image}
+            alt="random user"
+            className="user-img"
+          />
+          <p className="user-title">
+            My {title}
+          </p>
+          <p className="user-value">
+            {value}
+          </p>
+          <div className="values-list">
+            <button
+              className="icon"
+              data-labels="name"
+              onMouseOver={handleValue}
+            >
+              <FaUser />
+            </button>
+            <button
+              className="icon"
+              data-labels="age"
+              onMouseOver={handleValue}
+            >
+              <FaEnvelopeOpen />
+            </button>
+            <button
+              className="icon"
+              data-labels="email"
+              onMouseOver={handleValue}
+            >
+              <FaCalendarTimes />
+            </button>
+            <button
+              className="icon"
+              data-labels="street"
+              onMouseOver={handleValue}
+            >
+              <FaMap />
+            </button>
+            <button
+              className="icon"
+              data-labels="phone"
+              onMouseOver={handleValue}
+            >
+              <FaPhone />
+            </button>
+            <button
+              className="icon"
+              data-labels="password"
+              onMouseOver={handleValue}
+            >
+              <FaLock />
             </button>
           </div>
+          <button className="btn">
+            {isLoading ? 'Loading...' : 'Random User'}
+          </button>
         </div>
       </div>
     </main>
