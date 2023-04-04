@@ -16,6 +16,8 @@ function App()
   const [value, setValue] = useState("Random Person")
   const [title, setTitle] = useState("name")
 
+  const defaultImage = 'https://randomuser.me/api/portraits/men/75.jpg'
+
   const { data, isLoading, refetch } = useGetUsersQuery()
 
   const handleValue = (e) =>
