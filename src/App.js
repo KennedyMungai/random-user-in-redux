@@ -12,6 +12,8 @@ import
 
 function App()
 {
+  const [person, setPerson] = useState(null)
+
   return (
     <div className="App">
       <h2>Random User</h2>
