@@ -13,6 +13,7 @@ import
 function App()
 {
   const [person, setPerson] = useState(null)
+  const [value, setValue] = useState("Random Person")
 
   return (
     <div className="App">
