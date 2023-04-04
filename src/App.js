@@ -54,7 +54,7 @@ function App()
 
   return (
     <main>
-      <div className="block bcg-block">
+      <div className="block bcg-black">
         <div className="block">
           <div className="container">
             <img
