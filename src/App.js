@@ -4,7 +4,7 @@ import
 {
   FaEnvelopeOpen,
   FaUser,
-  FaCalenderTimes,
+  FaCalendarTimes,
   FaMap,
   FaPhone,
   FaLock
@@ -88,7 +88,7 @@ function App()
                 data-labels="email"
                 onMouseOver={handleValue}
               >
-                <FaCalenderTimes />
+                <FaCalendarTimes />
               </button>
               <button
                 className="icon"
