@@ -16,6 +16,8 @@ function App()
   const [value, setValue] = useState("Random Person")
   const [title, setTitle] = useState("name")
 
+  const { data, isLoading, refetch } = useGetUsersQuery()
+
   return (
     <div className="App">
       <h2>Random User</h2>
