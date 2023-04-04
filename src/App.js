@@ -18,6 +18,11 @@ function App()
 
   const { data, isLoading, refetch } = useGetUsersQuery()
 
+  const handleValue = () =>
+  {
+
+  }
+
   useEffect(() =>
   {
     if (data)
