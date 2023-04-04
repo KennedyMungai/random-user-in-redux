@@ -41,6 +41,8 @@ function App()
       }
 
       setPerson(newPerson)
+      setTitle("name")
+      setValue(newPerson.name)
     }
   }, [data])
 
