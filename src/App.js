@@ -27,7 +27,7 @@ function App()
   {
     if (data)
     {
-      const randomPerson = data.result
+      const randomPerson = data.results[0]
       const { phone, email } = randomPerson
       const { large: image } = randomPerson.picture
       const { password } = randomPerson.login
